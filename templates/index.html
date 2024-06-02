@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date Time</title>
+    <script src="{{url_for('static', filename='js/app.js')}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Current Date Time</h1>
+    <h1 id="timezone" data-datetime="{{ faysal['datetime'] }}">Loading time...</h1>
+    <h1>{{ faysal['timezone'] }}</h1>
+</body>
+</html>
